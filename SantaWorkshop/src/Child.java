@@ -4,14 +4,12 @@ public class Child
 {
     String name;
     int behaviorScore;
-    String wish;
     List<String> wishList = new ArrayList<>();
 
-    public Child(String name, int behaviorScore, String wish)
+    public Child(String name, int behaviorScore)
     {
         this.name=name;
         this.behaviorScore=behaviorScore;
-        this.wish=wish;
     }
     public int getBehaviorScore() {
         return behaviorScore;
@@ -37,7 +35,7 @@ public class Child
         this.name = name;
     }
 
-    void addWish()
+    void addWish(String wish)
     {
         this.wishList.add(wish);
     }

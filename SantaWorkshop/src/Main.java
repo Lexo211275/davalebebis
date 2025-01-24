@@ -8,8 +8,10 @@ public class Main {
         Reindeer reindeer2 = new Reindeer("Dasher",5, 150, "blue");
         reindeer1.fly();
         reindeer2.checkFitnessLevel();
-        Child child1 = new Child("Alice", 7, "nuke");
-        Child child2 = new Child("Tom", 2, "worldCupFor");
+        Child child1 = new Child("Alice", 7);
+        Child child2 = new Child("Tom", 2);
+        child2.addWish("nuke");
+        System.out.println(child2.getWishList());
         Santa santa = new Santa("Nicolas", "North", 1755);
         santa.checkNaughtyOrNiceList(child1);
         santa.deliverGifts();
