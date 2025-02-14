@@ -1,9 +1,5 @@
-public class NegativeNumberException extends Exception
+public class NegativeNumberException extends Throwable
 {
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
     public NegativeNumberException(String message)
     {
         super(message);
