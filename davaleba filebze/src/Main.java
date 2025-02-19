@@ -16,7 +16,7 @@ public class Main
                 """;
 
         try (FileWriter writer = new FileWriter("poem.txt")) {
-            writer.write(poem);
+                      writer.write(poem);
             System.out.println("სტროფი წარმატებით ჩაიწერა ფაილში!");
         } catch (IOException e) {
             e.printStackTrace();
