@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="LoginController">
+
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <padding>
+                <Insets top="30" bottom="30" left="40" right="40"/>
+            </padding>
+
+            <Label text="მომხმარებლის ავტორიზაცია">
+                <font>
+                    <Font name="Arial Bold" size="20"/>
+                </font>
+            </Label>
+
+            <TextField fx:id="usernameField" promptText="მომხმარებელი" maxWidth="200"/>
+
+            <PasswordField fx:id="passwordField" promptText="პაროლი" maxWidth="200"/>
+
+            <Button text="შესვლა" onAction="#handleLogin" maxWidth="100"/>
+
+            <Label fx:id="messageLabel" textFill="red" wrapText="true" maxWidth="250"/>
+        </VBox>
+    </center>
+</BorderPane>
